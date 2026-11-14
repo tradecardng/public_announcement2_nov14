@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<!-- Google Analytics 4 (Measurement ID: G-1N7E43J2MK) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1N7E43J2MK"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-1N7E43J2MK', { page_title: 'TC Incident Update - All users', campaign_page: 'incident_update_general' });
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>TradeCard · Keeping you informed</title>
+<meta name="description" content="A full explanation of the order issue on TradeCard from 4 to 9 November, how we compensated affected orders, and our apology.">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{--blue:#3785FA;--navy:#0B1F4D;--navy2:#071538;--lime:#CCFF00;--ice:#D7E6FF;--ink:#0B1F4D;--ink2:#3A4D75;--bg:#EEF4FF;--good:#13A36B;--warn:#E8902A}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}
+body{font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--ink);line-height:1.55;-webkit-font-smoothing:antialiased;overflow-wrap:break-word}
+.wrap{max-width:520px;margin:0 auto;padding:0 16px calc(32px + env(safe-area-inset-bottom))}
+.hero{position:relative;background:var(--navy);color:#fff;padding:calc(24px + env(safe-area-inset-top)) 16px 30px;border-bottom:4px solid var(--navy2);overflow:hidden}
+.hero:before{content:"";position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,.08) 1.6px,transparent 1.8px);background-size:22px 22px}
+.hin{position:relative;max-width:520px;margin:0 auto}
+.tag{display:inline-flex;align-items:center;gap:6px;background:#fff;color:var(--navy);border-radius:8px;padding:4px 10px;font-weight:900;font-size:11.5px;letter-spacing:1.5px}
+h1{margin-top:14px;font-weight:900;font-size:clamp(28px,8.4vw,36px);line-height:1.1;letter-spacing:-.8px}
+h1 span{color:var(--lime)}
+.hero p{margin-top:12px;font-size:15.5px;font-weight:600;color:#D7E2F7}
+.sumbox{margin-top:18px;background:rgba(255,255,255,.07);border:1.5px solid rgba(255,255,255,.18);border-radius:16px;padding:12px 14px;display:flex;flex-direction:column;gap:9px}
+.sumbox div{display:flex;gap:10px;align-items:flex-start;font-weight:700;font-size:14.5px;line-height:1.4}
+.sumbox i{flex:none;width:22px;height:22px;border-radius:50%;background:var(--lime);color:var(--navy);display:flex;align-items:center;justify-content:center;margin-top:1px}.sumbox i svg{width:13px;height:13px}
+
+section{margin-top:30px}
+.eb{font-size:12px;font-weight:900;letter-spacing:1.8px;color:var(--blue)}
+h2{font-size:21px;font-weight:900;letter-spacing:-.4px;line-height:1.2;margin-top:4px}
+p.t{margin-top:10px;font-size:15px;font-weight:500;color:var(--ink2)}p.t b{color:var(--ink);font-weight:800}
+
+.tl{list-style:none;margin-top:14px}
+.tl li{position:relative;display:flex;gap:14px;padding-bottom:18px}
+.tl li:not(:last-child):before{content:"";position:absolute;left:15px;top:34px;bottom:0;width:3px;background:#C7DAFB}
+.tl .d{flex:none;width:33px;height:33px;border-radius:50%;background:#fff;border:3px solid var(--blue);color:var(--blue);display:flex;align-items:center;justify-content:center;font-weight:900;font-size:13px}
+.tl li.w .d{border-color:var(--warn);color:var(--warn)}
+.tl li.ok .d{background:var(--good);border-color:var(--good);color:#fff}
+.tl .d svg{width:16px;height:16px}
+.tl b{display:block;font-size:15.5px;font-weight:800;line-height:1.3}
+.tl span{display:block;font-size:14px;font-weight:500;color:var(--ink2);margin-top:3px}
+
+.card{margin-top:14px;background:#fff;border:3px solid var(--navy);border-radius:18px;padding:16px;box-shadow:4px 5px 0 var(--navy)}
+.card.lime{background:var(--lime)}
+.card h3{font-size:17px;font-weight:900;line-height:1.25}
+.card p{margin-top:6px;font-size:14.5px;font-weight:500;color:var(--ink2)}.card.lime p{color:var(--navy)}
+.card ul{margin:8px 0 0 18px;font-size:14.5px;font-weight:600;color:var(--ink2);display:flex;flex-direction:column;gap:6px}
+.cp{margin-top:10px;display:flex;flex-direction:column;gap:7px}
+.cp div{display:flex;align-items:center;gap:12px;background:#fff;border:2.5px solid var(--navy);border-radius:12px;padding:8px 12px}
+.cp b{flex:none;min-width:84px;font-weight:900;font-size:20px;letter-spacing:-.5px}
+.cp span{font-size:13px;font-weight:700;color:var(--ink2)}
+.note{margin-top:10px;font-size:13px;font-weight:700;color:var(--navy)}
+
+.quote{margin-top:14px;background:var(--navy);color:#fff;border-radius:18px;padding:18px 16px}
+.quote b{display:block;font-size:18px;font-weight:900;line-height:1.3}
+.quote p{margin-top:8px;font-size:14.5px;font-weight:500;color:#C9D6F2}
+
+.contact{margin-top:14px;display:flex;flex-direction:column;gap:10px}
+.ct{display:flex;align-items:center;gap:12px;background:#fff;border:3px solid var(--navy);border-radius:16px;padding:12px 14px;text-decoration:none;color:inherit}
+.ct i{flex:none;width:42px;height:42px;border-radius:12px;background:var(--ice);color:var(--blue);display:flex;align-items:center;justify-content:center}.ct i svg{width:22px;height:22px}
+.ct b{display:block;font-size:15.5px;font-weight:800}.ct span{display:block;font-size:13.5px;font-weight:600;color:var(--ink2)}
+
+details{margin-top:10px;background:#fff;border:3px solid var(--navy);border-radius:16px}
+summary{list-style:none;cursor:pointer;padding:14px 44px 14px 16px;font-weight:800;font-size:15px;position:relative}
+summary::-webkit-details-marker{display:none}
+summary:after{content:"+";position:absolute;right:16px;top:50%;transform:translateY(-50%);font-size:22px;font-weight:800;color:var(--blue)}
+details[open] summary:after{content:"–"}
+details .bd{padding:0 16px 14px;font-size:14px;font-weight:500;color:var(--ink2)}
+.sign{margin-top:28px;text-align:center}
+.sign p{font-size:15px;font-weight:600;color:var(--ink2)}
+.sign b{display:block;margin-top:6px;font-size:17px;font-weight:900}
+footer{text-align:center;font-size:12.5px;color:var(--ink2);margin-top:22px}
+
+</style>
+</head>
+<body>
+
+<header class="hero"><div class="hin">
+  <span class="tag">AN UPDATE FROM TRADECARD</span>
+  <h1>Keeping you informed,<br><span>and a thank-you.</span></h1>
+  <p>We believe in being open with you, so we want to share an update. Between 4 and 9 November, TradeCard's systems were targeted in a cyberattack. During that time, some orders were delayed, and some were lost. It's now fully resolved, and here's what you should know.</p>
+  <div class="sumbox">
+    <div><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></i>The issue is fixed, and TradeCard is running normally again.</div>
+    <div><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></i>Every affected order has been compensated, including orders we couldn't recover.</div>
+    <div><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></i>Your TradeCard account and balance are safe.</div>
+    <div><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></i>There's nothing you need to do.</div>
+  </div>
+</div></header>
+
+<main class="wrap">
+
+  <section>
+    <div class="eb">WHAT HAPPENED</div>
+    <h2>A global attack that reached TradeCard</h2>
+    <p class="t">Recently, a serious security weakness was found in <b>PHP</b>, a technology used by a huge number of websites and apps around the world. This weakness, widely known as <b>PHP2Shell</b>, led to a wave of cyberattacks on many companies worldwide.</p>
+    <p class="t">Between <b>4 and 9 November</b>, TradeCard's systems were targeted in a similar attack. Here's what happened, step by step:</p>
+    <ol class="tl">
+      <li class="w"><div class="d">1</div><div><b>Our security system detected the attack</b><span>It flagged unusual activity on our order system.</span></div></li>
+      <li class="w"><div class="d">2</div><div><b>Order processing was stopped to protect the system</b><span>To keep the platform and your account safe, the system paused order processing. As a result, many orders were delayed, and some were lost.</span></div></li>
+      <li><div class="d"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L4 17l3 3 5.3-5.3a4 4 0 0 0 5.4-5.4l-2.5 2.5-2.4-.6-.6-2.4z"/></svg></div><div><b>Our team worked round the clock</b><span>We fixed the issue, secured the system and restored order processing, and we recovered as many orders as we could.</span></div></li>
+      <li class="ok"><div class="d"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></div><div><b>Every affected order was compensated</b><span>Some orders couldn't be recovered. We compensated all of them, because it's our responsibility.</span></div></li>
+    </ol>
+  </section>
+
+  <section>
+    <div class="eb">MAKING IT RIGHT</div>
+    <h2>Every affected order has been compensated</h2>
+    <div class="card">
+      <h3>This was our responsibility</h3>
+      <p>Orders were affected because of an attack on our systems, so we have compensated every affected order, including the ones we couldn't recover. Any compensation is in the <b>TC wallet</b> of the account that placed the order.</p>
+    </div>
+    <div class="card lime">
+      <h3>A thank-you for trading with us</h3>
+      <p>Thank you for your patience and trust while we fixed this. As a thank-you, we've added 2 coupons to your account, worth ₦1,800 in total, valid until 1 December:</p>
+      <div class="cp"><div><b>₦300</b><span>on a payout of ₦30,000 or more</span></div><div><b>₦1,500</b><span>on a payout of ₦150,000 or more</span></div></div>
+      <p class="note">Find them on the Coupons page. Update to the latest app version to use them.</p>
+    </div>
+    <div class="card">
+      <h3>Have a question about an order?</h3>
+      <p>If you think one of your orders from 4 to 9 November hasn't been compensated, please contact our support team. Chat with us in the app and share your order ID, or email <a href="mailto:service@tradecard.store" style="color:var(--blue);font-weight:800">service@tradecard.store</a>. We'll check it and make it right.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="eb">OUR SUPPORT TEAM</div>
+    <h2>If you waited for a reply, we're sorry</h2>
+    <p class="t">During that time, messages to our support team rose sharply. The team worked day and night, but many questions weren't answered on time, and some were missed.</p>
+    <div class="quote"><b>An unanswered question is our failure, not yours.</b><p>We sincerely apologise and ask for your forgiveness. If you're still waiting for an answer, or anything still doesn't look right, please reach out. We're here, and we always will be.</p></div>
+  </section>
+
+  <section>
+    <div class="eb">STILL NEED HELP?</div>
+    <h2>Talk to us</h2>
+    <div class="contact">
+      <div class="ct"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/></svg></i><div><b>Chat with support in the app</b><span>Share your order ID so we can check it straight away.</span></div></div>
+      <a class="ct" href="mailto:service@tradecard.store"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></i><div><b>service@tradecard.store</b><span>For questions, clarification or a complaint.</span></div></a>
+    </div>
+  </section>
+
+  <section>
+    <div class="eb">QUESTIONS</div>
+    <h2>What you may be wondering</h2>
+    <details><summary>Were any of my orders affected?</summary><div class="bd">Every affected order from 4 to 9 November has been compensated, including orders we couldn't recover. If one of your orders was affected, you'll see the compensation in your TC wallet. If you think an order still hasn't been compensated, chat with support in the app and share your order ID, or email service@tradecard.store.</div></details>
+    <details><summary>Is my account safe?</summary><div class="bd">Yes. Your TradeCard account and balance are safe. Our security system detected the attack and stopped order processing to protect the platform.</div></details>
+    <details><summary>Is TradeCard working normally now?</summary><div class="bd">Yes. The issue is fixed, and orders are being processed normally again.</div></details>
+    <details><summary>Where are my thank-you coupons?</summary><div class="bd">On the Coupons page in the app, valid until 1 December. Update to the latest app version to use them. One coupon per order.</div></details>
+    <details><summary>I contacted support and never got a reply.</summary><div class="bd">We're truly sorry. Please message us again in the app or email service@tradecard.store, and we'll make sure you get an answer.</div></details>
+  </section>
+
+  <div class="sign"><p>Thank you for your patience, and for trading with TradeCard.</p><b>The TradeCard team</b></div>
+  <footer>© TradeCard</footer>
+</main>
+<script>
+(function(){
+  function track(n,p){ if(typeof gtag==='function') gtag('event',n,p||{}); }
+  document.querySelectorAll('details').forEach(function(d){ d.addEventListener('toggle',function(){ if(d.open) track('faq_open',{question:d.querySelector('summary').textContent.trim().slice(0,80)}); }); });
+  document.querySelectorAll('a[href^="mailto:"]').forEach(function(m){ m.addEventListener('click',function(){ track('support_email_click'); }); });
+  var seen=false, sec=document.querySelectorAll('section')[1];
+  if(sec&&'IntersectionObserver' in window){ new IntersectionObserver(function(e,o){ if(e[0].isIntersecting&&!seen){ seen=true; track('compensation_section_view'); o.disconnect(); } },{threshold:.4}).observe(sec); }
+})();
+</script>
+</body>
+</html>
